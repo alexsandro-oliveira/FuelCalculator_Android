@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="410dp"
+        android:layout_height="200dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/calcResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$51.0"
+        android:textColor="@color/white"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Revisão dos dados inseridos"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="160dp"
+        android:text="Preço"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/resultPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/resultPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="70dp"
+        android:text="1.7"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_price" />
+
+    <TextView
+        android:id="@+id/tv_consumption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="130dp"
+        android:text="Consumo"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/resultConsump"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price" />
+
+    <TextView
+        android:id="@+id/resultConsump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="70dp"
+        android:text="5.0"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_consumption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_consumption" />
+
+
+    <TextView
+        android:id="@+id/tv_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="160dp"
+        android:text="KM"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/resultKm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_consumption" />
+
+    <TextView
+        android:id="@+id/resultKm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="58dp"
+        android:text="150.0"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_km"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_km" />
+
+    <Button
+        android:id="@+id/btn_newCalc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Novo Calculo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
