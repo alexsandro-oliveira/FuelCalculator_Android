@@ -37,7 +37,7 @@ class ResultActivity : AppCompatActivity() {
 
         val result = (distance/ consumption) * price
 
-        tvResult.text = result.toString()
+        tvResult.text = "R$ %.2f".format(result)
 
         btnNewCalc.setOnClickListener {
             val intent = Intent(this, PriceActivity::class.java)

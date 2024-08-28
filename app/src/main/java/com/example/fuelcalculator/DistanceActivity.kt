@@ -31,7 +31,7 @@ class DistanceActivity : AppCompatActivity() {
         val btnNext = findViewById<Button>(R.id.btn_next)
 
         btnNext.setOnClickListener {
-            if (edtDistance.toString() == "") {
+            if (edtDistance.text.toString() == "") {
                 Snackbar.make(it, "Preecha com a distância que irá percorrer!", Snackbar.LENGTH_LONG).show()
             } else {
                 val distance = edtDistance.text.toString().toFloat()

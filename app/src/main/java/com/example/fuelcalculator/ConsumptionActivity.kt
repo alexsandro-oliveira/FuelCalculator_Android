@@ -29,7 +29,7 @@ class ConsumptionActivity : AppCompatActivity() {
         val btnNext = findViewById<Button>(R.id.btn_next)
 
         btnNext.setOnClickListener {
-            if (edtConsump.toString() == "") {
+            if (edtConsump.text.toString() == "") {
                 Snackbar.make(it, "Preecha com o consumo do veículo!", Snackbar.LENGTH_LONG).show()
             } else {
                 val consumption = edtConsump.text.toString().toFloat()

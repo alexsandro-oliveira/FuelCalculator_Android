@@ -3,40 +3,59 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@color/bg_primary"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ResultActivity">
 
     <View
         android:id="@+id/view2"
-        android:layout_width="410dp"
-        android:layout_height="200dp"
-        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/topper_bg_shape"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/calcResult"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="$51.0"
-        android:textColor="@color/white"
-        android:textSize="60dp"
-        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/bg_blue_shape"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view2" />
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/calcResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="$51.0"
+            android:textColor="@color/white"
+            android:textSize="60dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    </LinearLayout>
+
+
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:text="Revisão dos dados inseridos"
         android:textAlignment="center"
-        android:textSize="18dp"
+        android:textSize="20dp"
+
+        android:textColor="@color/primary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2" />
@@ -46,12 +65,13 @@
         android:id="@+id/tv_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginRight="160dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:gravity="start"
+        android:textColor="@color/primary"
         android:text="Preço"
         android:textSize="22dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/resultPrice"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -63,6 +83,7 @@
         android:text="1.7"
         android:textSize="22dp"
         android:textStyle="bold"
+        android:textColor="@color/secondary"
         app:layout_constraintBottom_toBottomOf="@+id/tv_price"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_price" />
@@ -72,11 +93,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:layout_marginRight="130dp"
+        android:layout_marginLeft="50dp"
         android:text="Consumo"
         android:textSize="22dp"
+        android:textColor="@color/primary"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/resultConsump"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_price" />
 
@@ -87,6 +108,7 @@
         android:layout_marginRight="70dp"
         android:text="5.0"
         android:textSize="22dp"
+        android:textColor="@color/secondary"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/tv_consumption"
         app:layout_constraintEnd_toEndOf="parent"
@@ -98,11 +120,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:layout_marginRight="160dp"
+        android:layout_marginLeft="50dp"
         android:text="KM"
         android:textSize="22dp"
+        android:textColor="@color/primary"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/resultKm"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_consumption" />
 
@@ -110,9 +132,10 @@
         android:id="@+id/resultKm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="58dp"
+        android:layout_marginRight="70dp"
         android:text="150.0"
         android:textSize="22dp"
+        android:textColor="@color/secondary"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/tv_km"
         app:layout_constraintEnd_toEndOf="parent"
@@ -122,11 +145,16 @@
         android:id="@+id/btn_newCalc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginBottom="76sp"
+        android:textStyle="normal"
+        android:textSize="16dp"
+        android:textColor="@color/bg_primary"
+        android:background="@drawable/btn_shape"
+        android:gravity="center"
         android:text="Novo Calculo"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

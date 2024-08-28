@@ -27,7 +27,7 @@ class PriceActivity : AppCompatActivity() {
         val btnNext = findViewById<Button>(R.id.btn_next)
 
         btnNext.setOnClickListener {
-            if (edtPrice.toString() == "") {
+            if (edtPrice.text.toString() == "") {
                 Snackbar
                     .make(
                         it,
