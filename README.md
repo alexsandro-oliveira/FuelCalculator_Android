@@ -17,7 +17,7 @@ Também é desafio para que eu possa aperfeiçoar minhas skills no desenvolvimen
 <img src="https://github.com/user-attachments/assets/6b5fdbcf-6da2-421d-b46f-3cbaef1e3bdc" width="264px">
 <img src="https://github.com/user-attachments/assets/43232cad-38c2-44b8-92e3-c51cf2de3d63" width="264px">
 <img src="https://github.com/user-attachments/assets/91462b9f-7073-4df6-8f66-0e2ebfe8eeaa" width="264px">
-<img src="https://github.com/user-attachments/assets/6ffbc3c9-a573-49d8-ad55-4a339a3bceff" width="264px">
+<img src="https://github.com/user-attachments/assets/69c633ba-ad1e-4aa9-8446-9a206c3ebaa5" width="264px">
 <img src="https://github.com/user-attachments/assets/76111671-7906-4b57-87eb-c62bd9caeba2" width="264px">
 
 
