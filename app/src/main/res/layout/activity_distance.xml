@@ -37,7 +37,7 @@
         android:textStyle="bold"
         android:textSize="23dp"
         android:textColor="@color/primary"
-        android:text="Distancia até o Destino"
+        android:text="Distância até o destino"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="156dp" />
